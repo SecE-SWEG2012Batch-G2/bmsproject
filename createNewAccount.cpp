@@ -1,10 +1,7 @@
-Nathan, [30.08.21 23:06]
-
 int create_new_account_page()
 {
- string name;
  int age, phone;
- string city, sex;
+ string sex;
  int acc_type;
  string password;
  int balance;
@@ -87,6 +84,7 @@ accType:
 
  user = customer_counter++;
  cout << "\t Account has been successfully created!" << endl <<
-      "\t Press any key to continue: ";
+      "\t Press any key to proceed to your account: ";
+ 
  return 1;
 }
