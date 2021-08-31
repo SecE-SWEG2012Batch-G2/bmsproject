@@ -149,13 +149,13 @@ account_home:
 	switch (option)
 	{
 	case 1:
-		if (deposit_page())
+		if (deposit_page() || true)
 		{
 			sleep(5);
 			goto account_home;
 		}
 	case 2:
-		if (withdraw_page())
+		if (withdraw_page() || true)
 		{
 			sleep(5);
 			goto account_home;
