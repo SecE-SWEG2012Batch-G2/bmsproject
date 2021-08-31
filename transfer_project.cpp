@@ -92,20 +92,27 @@ int transfer_page()
 	int recipient_index = 0;
 	string recname;
 	int cash;
-
 	system("cls");
 	cout << endl;
+accept:
 	accept("     Enter recepient name: ", &recname, 20);
 	for (int i = 0; i < customer_counter; i++)
 	{
 		if (customer[i].name == recname)
+		{
+			recepient_index = i;
 			goto cash;
+		}
 	}
+	cout << "     There is no customer named " << recname << "!" endl;
+	cout << "     please Enter the name correctly." << endl;
+	goto accept;
 cash:
-	accept("     Amount of momey: ", &cash, 50, (int)customer[user].balance - acc_types[customer[user].acc_type].initial);//money for transfer is dependent on customers initial holdings in savings
-	customer[recipient_index].balance += cash;//money is added to the recepients unique index from senders balance
-	customer[user].balance -= cash;//money is removed from senders balance
-	customer[user].transactions[customer[user].Index % 6].date = date;
+	accept("     Amount of momey: ", &cash, 50, (int)customer[user].balance - acc_types[customer[user].acc_type - 1].initial);
+	//money for transfer is dependent on customers initial holdings in savings
+	customer[recipient_index].balance += cash;  //money is added to the recepients unique index from senders balance
+	customer[user].balance -= cash;  //money is removed from senders balance
+	customer[user].transactions[customer[user].Index % 6].date = time(0);
 	customer[user].transactions[customer[user].Index % 6].name = "Transfer";
 	customer[user].transactions[customer[user].Index % 6].amount = -cash;
 	customer[user].Index++;
