@@ -151,8 +151,10 @@ account_home:
 	{
 	case 1:
 		if (deposit_page())
+		{
 			sleep(5);
 			goto account_home;
+		}
 	case 2:
 		if (withdraw_page())
 			sleep(5);
@@ -174,11 +176,17 @@ account_home:
 
 	return 0;
 }
+
+//all functions below have to return 0 or 1
+//that is the way it returns to the main() function
+//not by calling it main();
+
 int create_new_account_page(){
 	return 1;
 }
 int login_page()
 {
+	//should return 1 if successfully logged in but 0 if failed
 	return 1;
 }
 int account_info_page()
@@ -199,5 +207,6 @@ int transfer_page()
 }
 int deactivate_page()
 {
+	//should return 1 if successfully diactivated or zero if cancelled
 	return 1;
 }
