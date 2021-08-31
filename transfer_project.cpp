@@ -110,21 +110,26 @@ accept:
 cash:
 	accept("     Amount of momey: ", &cash, 50, (int)customer[user].balance - acc_types[customer[user].acc_type - 1].initial);
 	//money for transfer is dependent on customers initial holdings in savings
-	customer[recipient_index].balance += cash;  //money is added to the recepients unique index from senders balance
-	customer[user].balance -= cash;  //money is removed from senders balance
-	customer[user].transactions[customer[user].Index % 6].date = time(0);
-	customer[user].transactions[customer[user].Index % 6].name = "Transfer";
-	customer[user].transactions[customer[user].Index % 6].amount = -cash;
-	customer[user].Index++;
-
-	cout <<"     Enter any key to continue: ";
+	cout <<"     Enter 1 to confirm transfer to " << recname << " or another key to cancel: ";
 	cin >> option;
+	
+	if (option == "1")
+	{
+		customer[recipient_index].balance += cash;  //money is added to the recepients unique index from senders balance
+		customer[user].balance -= cash;  //money is removed from senders balance
+		customer[user].transactions[customer[user].Index % 6].date = time(0);
+		customer[user].transactions[customer[user].Index % 6].name = "Transfer";
+		customer[user].transactions[customer[user].Index % 6].amount = -cash;
+		customer[user].Index++;
+		
+		cout <<"     Enter any key to continue: ";
+		cin >> option;
+	}
 
 	return 1;
 }
 
 int main() {
 	transfer_page();
-
-    return 0;
+	return 0;
 }
