@@ -122,6 +122,7 @@ cash:
 		customer[user].transactions[customer[user].Index % 6].amount = -cash;
 		customer[user].Index++;
 		
+		cout << endl << "     You have successfully transfered birr " << cash << " to " << recname << "." << endl;
 		cout <<"     Enter any key to continue: ";
 		cin >> option;
 	}
