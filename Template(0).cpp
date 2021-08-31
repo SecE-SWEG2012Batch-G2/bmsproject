@@ -1,3 +1,9 @@
+// Group Members:
+// 1. Michael Gashaw
+// 2. Minase Driba
+// 3. Minase Fikadu
+// 4. Mohammed Yezid
+// 5. Nathan Lijalem
 #include <iostream>
 #include <cstring>
 #include <string.h>
@@ -170,7 +176,7 @@ account_home:
 		if (deactivate_page())
 			goto main_menu;
 		else
-			goto account_home;
+			sleep(5);goto account_home;
 	case 6:
 		goto main_menu;
 	}
