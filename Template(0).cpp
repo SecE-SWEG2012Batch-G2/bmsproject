@@ -46,9 +46,6 @@ int user = 0;
 int initial_acc_no = 10000000;
 string option;
 
-customer[0] = {"Abebe", 32, 'M', 940506070, "Harar", 1, "123456", 300, 0, ++initial_acc_no, "Deposit", time(0), 300};
-customer_counter++;
-
 int deposit_page();
 int withdraw_page();
 int transfer_page();
