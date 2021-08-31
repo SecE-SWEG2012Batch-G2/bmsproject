@@ -118,6 +118,8 @@ main_menu:
 	case 2:
 		if (create_new_account_page())
 			goto account_home;
+		else
+			goto main_menu;
 	default:
 		return 0;
 	}
@@ -154,13 +156,15 @@ account_home:
 		}
 	case 2:
 		if (withdraw_page())
+		{
 			sleep(5);
 			goto account_home;
+		}
 	case 3:
-		if (transfer_page())
+		if (transfer_page() || true)
 			goto account_home;
 	case 4:
-		if (account_info_page())
+		if (account_info_page() || true)
 			goto account_home;
 	case 5:
 		if (deactivate_page())
