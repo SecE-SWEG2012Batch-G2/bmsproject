@@ -47,7 +47,7 @@ struct Account
 	unsigned long long int acc_no;
     int phone;
 	string city;
-	//char e_mail[20];
+	char sex;
 	unsigned int acc_type;
 	Transaction transactions[6];
 	string password;
