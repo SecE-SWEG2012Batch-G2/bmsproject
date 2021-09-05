@@ -1,6 +1,6 @@
 <h1 align=center>BANK MANAGEMENT SYSTEM</h1>
 
-You can see the base code in *bms.cpp* file
+You can see the base code in **bms.cpp** file
 
 <h2 align=left>Built Using C++</h2>
 
