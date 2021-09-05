@@ -5,13 +5,15 @@ You can see the base code in bms.cpp file
 <h2 align=left>Built Using C++</h2>
 
 
-##Screenshots
+<h2 align=left>Screenshots</h2>
 
 The screenshots were taken from linux system based distro
-Comming soon...
+
+Pictures of the running program will be released soon
 
 <h2 align=left>Future Update</h2>
 
+Check by cloning the repository
 
 <h2 align=left>Authors</h2>
 
