@@ -1,18 +1,12 @@
 <h1 align=center>BANK MANAGEMENT SYSTEM</h1>
 
-You can see the base code in **bms.cpp** file
+You can see the main code in **bms.cpp** file
 
 <h2 align=left>Built Using C++</h2>
 
 <h2 align=left>Screenshots</h2>
 
-The screenshots were taken from linux system based distro
-
-Pictures of the running program will be released soon
-
 <h2 align=left>Future Update</h2>
-
-Check by cloning the repository
 
 <h2 align=left>Authors</h2>
 
