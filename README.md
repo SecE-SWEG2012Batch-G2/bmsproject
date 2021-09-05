@@ -1,20 +1,23 @@
-<h1 align="center">BANK MANAGEMENT SYSTEM</h1>
+<h1 align=center>BANK MANAGEMENT SYSTEM</h1>
 
 You can see the base code in bms.cpp file
 
-##Built Using C++
+<h2 align=left>Built Using C++</h2>
+
 
 ##Screenshots
 
 The screenshots were taken from linux system based distro
+Comming soon...
 
-##Future Updates
+<h2 align=left>Future Update</h2>
 
-##Authors
+
+<h2 align=left>Authors</h2>
 
 **Second Year AASTU Software Engineering Section E Group 2 Students**
 
-##Support
+<h2 align=left>Support</h2>
 
 We want give a special thank to our teachers Chere Lemma and Tarikua for their support.
 
