@@ -433,7 +433,7 @@ int account_info_page() {
         cout << setw(20) << left << "Date" << endl;
         cout << setfill(' ');
 
-        for (int j = customer[user].Index - 1; j > -1; j--) {
+        for (int j = customer[user].Index - 1; j > -1 || j > customer[user].Index - 7; j--) {
           cout << '\t' << setw(10) << left << customer[user].Index - j;
           cout << setw(20) << left << customer[i].transactions[j % 6].amount;
           cout << setw(20) << left << customer[i].transactions[j % 6].name;
